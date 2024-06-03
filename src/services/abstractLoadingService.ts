@@ -1,7 +1,5 @@
 ﻿import 'reflect-metadata';
-import { singleton } from 'tsyringe';
 
-@singleton()
 export abstract class AbstractLoadingService {
     /**
      * For showing loading

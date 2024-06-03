@@ -1,10 +1,30 @@
 {
-  "name": "typescript-common-fw",
-  "private": true,
+  "name": "one-frontend-framework",
   "version": "0.0.1",
-  "type": "module",
+  "description": "Abstract base framework for frontend",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vosonha89/one-frontend-framework.git"
+  },
+  "keywords": [
+    "typescript frontend",
+    "abstract frontend"
+  ],
+  "author": "vosonha89",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vosonha89/one-frontend-framework/issues"
+  },
+  "homepage": "https://github.com/vosonha89/one-frontend-framework#readme",
   "scripts": {
-    "build": "npm run lint && tsc",
+    "prepare": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npm run lint && npx tsc",
     "lint": "eslint ."
   },
   "dependencies": {
