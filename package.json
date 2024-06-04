@@ -1,6 +1,6 @@
 {
   "name": "one-frontend-framework",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Abstract base framework for frontend",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
