@@ -1,18 +1,19 @@
 import 'reflect-metadata';
 import { AbstractStorageService } from './abstractStorageService';
+import { AnyType } from '../types/abstractType';
 
 /**
  * Abstract language service to implement
  */
-export abstract class AbstractLanguageService<T> {
-    public storeService!: AbstractStorageService;
-    public text!: T;
+export abstract class AbstractLanguageService<T extends AbstractStorageService> {
+    public storeService!: T;
+    public text!: AnyType;
 
     /**
      * Init storage service
      * @param storeService 
      */
-    public abstract initStore<T extends AbstractStorageService>(storeService: T): void;
+    public abstract initStore(storeService: T): void;
 
     /**
      * Set language to store 
