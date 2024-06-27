@@ -10,12 +10,6 @@ export abstract class AbstractLanguageService<T extends AbstractStorageService> 
     public text!: AnyType;
 
     /**
-     * Init storage service
-     * @param storeService 
-     */
-    public abstract initStore(storeService: T): void;
-
-    /**
      * Set language to store 
      * @param value 
      */
